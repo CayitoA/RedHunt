@@ -1,0 +1,46 @@
+@use '../modulos/variables' as *; 
+
+
+#presentacion{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .contenedor {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor_texto {
+        display: flex;
+        align-items: center;
+        width: 700px;
+        z-index: 1;
+    }
+    .contenedor_texto h1 {
+        margin-right: 20px;
+        font-size: 6rem;
+        font-weight: 600;
+        color: white;
+    }
+    span{
+        color:$color2;
+    }
+    .barra__escritura {
+        width: 3px;
+        height: 70px;
+        margin-left: 5px;
+        background-color: white;
+        transform: rotateZ(10deg);
+        animation: barra-animacion 1s ease infinite;
+    }
+    .contenedor__texto__animacion {
+        display: flex;
+        color: white;
+        font-size: 3rem;
+    }
+    

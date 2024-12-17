@@ -1,0 +1,163 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+#menu {
+  background-color: #2C2C2C;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .categorias {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* enlaces del menu */
+#menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#menu ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#presentacion {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor_texto {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  z-index: 1;
+}
+
+.contenedor_texto h1 {
+  margin-right: 20px;
+  font-size: 6rem;
+  font-weight: 600;
+  color: white;
+}
+
+span {
+  color: #E53E1F;
+}
+
+.barra__escritura {
+  width: 3px;
+  height: 70px;
+  margin-left: 5px;
+  background-color: white;
+  transform: rotateZ(10deg);
+  animation: barra-animacion 1s ease infinite;
+}
+
+.contenedor__texto__animacion {
+  display: flex;
+  color: white;
+  font-size: 3rem;
+}
+
+#modulo {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2C2C2C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modulo .frase {
+  width: 990px;
+}
+#modulo .frase h2 {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+}
+#modulo .frase h4 {
+  font-size: 2rem;
+  color: #E53E1F;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: transform 1s;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
+}
+#modulo .frase h3 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+  transition: transform 1s;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+}
+to {
+  opacity: 1;
+  scale: 100%;
+}
+
+.frasegrande {
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
+}
+
+.frasetitulo {
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+h3 {
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
