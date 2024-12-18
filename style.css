@@ -136,7 +136,7 @@ span {
   height: 100vh;
 }
 #header-foto .imagen1 {
-  background-image: url(/img/istockphoto-2165505447-1024x1024.jpg);
+  background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -144,7 +144,7 @@ span {
   height: 100%;
 }
 #header-foto .imagen2 {
-  background-image: url(/img/istockphoto-694960328-1024x1024.jpg);
+  background-image: url(img/istockphoto-694960328-1024x1024.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -160,7 +160,7 @@ span {
   height: 100%;
 }
 #header-foto .imagen4 {
-  background-image: url(/img/istockphoto-1759364452-1024x1024.jpg);
+  background-image: url(img/istockphoto-1759364452-1024x1024.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
