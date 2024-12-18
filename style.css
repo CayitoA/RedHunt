@@ -45,6 +45,13 @@ body {
   padding: 0;
 }
 
+#piedepagina {
+  margin: 0 auto;
+  width: 100vw;
+  height: 5rem;
+  background-color: #121212;
+}
+
 #presentacion {
   width: 100vw;
   height: 100vh;
@@ -98,38 +105,26 @@ span {
   height: 100vh;
   background-color: #2C2C2C;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
 #servicios .cards {
   width: 990px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 40px;
-}
-
-#servicios .card {
   align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  border: 3px solid white;
+}
+#servicios .card {
   background-color: black;
+  padding: 20px;
 }
-
-#servicios .card h2 {
+#servicios h2 {
   color: white;
+  font-weight: 700;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 800;
-}
-
-#servicios h2:hover {
-  color: #E53E1F;
-  scale: 1.1;
 }
 
 #servicios .margen {
@@ -141,7 +136,31 @@ span {
   height: 100vh;
 }
 #header-foto .imagen1 {
-  background-image: url(/img/istockphoto-1019702098-1024x1024.jpg);
+  background-image: url(/img/istockphoto-2165505447-1024x1024.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#header-foto .imagen2 {
+  background-image: url(/img/istockphoto-694960328-1024x1024.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#header-foto .imagen3 {
+  background-image: url(img/istockphoto-1019702098-1024x1024.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#header-foto .imagen4 {
+  background-image: url(/img/istockphoto-1759364452-1024x1024.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
