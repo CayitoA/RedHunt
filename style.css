@@ -45,6 +45,10 @@ body {
   padding: 0;
 }
 
+#menu a:hover {
+  color: #a0a0a0;
+}
+
 #piedepagina {
   margin: 0 auto;
   width: 100vw;
@@ -119,7 +123,9 @@ span {
 }
 #servicios .card {
   background-color: black;
-  padding: 20px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  border: 3px solid white;
 }
 #servicios h2 {
   color: white;
@@ -131,9 +137,104 @@ span {
   padding: 10px;
 }
 
+#reunion {
+  width: 100vw;
+  height: 80vh;
+  background-color: #a0a0a0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#reunion .espacio {
+  padding: 30px 0;
+}
+#reunion .tarjeta {
+  width: 990px;
+  height: 22rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2C2C2C;
+}
+#reunion .tarjeta .texto1 {
+  width: 49%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  background-color: black;
+}
+#reunion .tarjeta .texto1 h4 {
+  font-size: 3.5rem;
+}
+#reunion .tarjeta .texto {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  line-height: 100px;
+}
+
+#creative {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#creative .espacio {
+  padding: 30px 0;
+}
+#creative .tarjeta {
+  width: 990px;
+  height: 22rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2C2C2C;
+}
+#creative .tarjeta .texto1 {
+  width: 49%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  background-color: black;
+}
+#creative .tarjeta .texto1 h4 {
+  font-size: 3.5rem;
+}
+#creative .tarjeta .texto {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  line-height: 100px;
+}
+
 #header-foto {
   width: auto;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #header-foto .imagen1 {
   background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
@@ -168,6 +269,15 @@ span {
   height: 100%;
 }
 
+#header-foto h1 {
+  color: #E53E1F;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #E53E1F;
+  text-align: center;
+  padding-top: 200px;
+}
+
 #modulo {
   width: 100vw;
   height: 100vh;
@@ -187,7 +297,7 @@ span {
   text-align: center;
 }
 #modulo .frase h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #E53E1F;
   text-align: center;
   line-height: 1.2;
@@ -299,6 +409,52 @@ h3 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+#mensaje {
+  width: 100vw;
+  height: 40vh;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mensaje .cards {
+  width: 990px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+#mensaje .card {
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 3px solid white;
+  background-color: black;
+  padding: 30px 0;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  animation-delay: var(--delay);
+}
+
+#mensaje .card h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+#mensaje h3:hover {
+  color: #E53E1F;
+  scale: 1.1;
+}
+
+#mensaje .margen {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

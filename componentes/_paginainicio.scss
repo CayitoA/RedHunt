@@ -42,6 +42,9 @@
         color: white;
         font-size: 3rem;
     }
+
+
+   
     
     // cards servicios
 
@@ -65,7 +68,10 @@
 
         .card{
             background-color: black;
-            padding: 20px;
+            padding: 40px 20px;
+            border-radius: 5px;
+            border: 3px solid  white;
+        
         }
 
         h2{
@@ -77,4 +83,130 @@
 
 #servicios .margen{
     padding: 10px;
+}
+
+
+// seccion agendar reunión
+
+#reunion{
+    width: 100vw;
+    height: 80vh;
+    background-color: #a0a0a0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .espacio{
+        padding: 30px 0;
+    }
+
+    .tarjeta{
+        width: $width;
+        height: 22rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color1;
+
+        
+
+        .texto1{
+            width: 49%;
+            height: 22rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            background-color: black;
+
+            h4{
+                font-size: 3.5rem;
+            }
+        }
+        .texto{
+            width: 49%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            line-height: 100px;
+        }
+
+
+
+
+
+    }
+
+  
+}
+
+
+// seccion agendar reunión
+
+#creative{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    .espacio{
+        padding: 30px 0;
+    }
+
+    .tarjeta{
+        width: $width;
+        height: 22rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color1;
+
+        
+
+        .texto1{
+            width: 49%;
+            height: 22rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            background-color: black;
+
+            h4{
+                font-size: 3.5rem;
+            }
+        }
+        .texto{
+            width: 49%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            line-height: 100px;
+        }
+
+
+
+
+
+    }
+
+  
 }
