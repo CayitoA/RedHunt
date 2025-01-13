@@ -1,5 +1,8 @@
 * {
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,17 +55,26 @@ body {
 #presentacion {
   width: 100vw;
   height: 100vh;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.contenedor {
+#presentacion .contenedor {
+  width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+#presentacion .foto-inicio {
+  background-image: url(img/BNclose-hands-using-smart-phone-course-deadline-businesswoman-texting-late-night-while-working-important-project-using-smartphone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .contenedor_texto {
@@ -97,129 +109,206 @@ span {
   font-size: 3rem;
 }
 
-#servicios {
+@keyframes color {
+  0% {
+    background-color: #232323;
+  }
+  25% {
+    background-color: #2c2c2c;
+  }
+  50% {
+    background-color: #373737;
+  }
+  75% {
+    background-color: #484848;
+  }
+  100% {
+    background-color: #656565;
+  }
+}
+#barra {
   width: 100vw;
-  height: 100vh;
-  background-color: #2C2C2C;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  animation: color 4s infinite;
 }
-#servicios .cards {
+
+#barra .contenedor-card {
   width: 990px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  padding: 100px 0;
 }
-#servicios .card {
-  background-color: black;
-  padding: 40px 20px;
-  border-radius: 5px;
+
+#barra .card-servicios {
+  height: auto;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 12px;
   border: 3px solid white;
+  background-color: transparent;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  overflow: hidden;
 }
-#servicios h2 {
-  color: white;
+
+.margen {
+  padding: 20px;
+}
+
+#barra .contenedor-texto {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 16rem;
+  padding: 20px;
+}
+
+#barra .contenedor-texto h3 {
+  font-size: 2rem;
   font-weight: 700;
+  padding: 10px 0;
+  color: #E53E1F;
+}
+
+#barra h5 {
+  font-size: 1.2rem;
+  color: white;
   text-align: center;
 }
 
-#servicios .margen {
-  padding: 10px;
+#barra .card-servicios:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
 }
 
-#reunion {
+#barra .icono {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding-top: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+section .animate {
+  opacity: 0;
+  filter: blur(9px);
+  transition: 2s;
+  transform: scale(0.5);
+}
+
+section.show-animate .animate {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+#service {
   width: 100vw;
-  height: 80vh;
-  background-color: #a0a0a0;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  animation: color 4s infinite;
 }
-#reunion .espacio {
-  padding: 30px 0;
-}
-#reunion .tarjeta {
+
+#service .card-servicios {
   width: 990px;
-  height: 22rem;
+  background-color: snow;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  background-color: #2C2C2C;
-}
-#reunion .tarjeta .texto1 {
-  width: 49%;
-  height: 22rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 20px;
-  background-color: black;
-}
-#reunion .tarjeta .texto1 h4 {
-  font-size: 3.5rem;
-}
-#reunion .tarjeta .texto {
-  width: 49%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 20px;
-  line-height: 100px;
+  border-radius: 12px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  overflow: hidden;
 }
 
-#creative {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.margen {
+  padding: 50px 20px;
+}
+
+#service .contenedor-imagen .foto1 {
   background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
+}
+
+#service .contenedor-imagen .foto2 {
+  background-image: url(img/istockphoto-694960328-1024x1024.jpg);
+}
+
+#service .contenedor-imagen .foto3 {
+  background-image: url(img/istockphoto-1019702098-1024x1024.jpg);
+}
+
+#service .contenedor-imagen .foto4 {
+  background-image: url(img/istockphoto-1759364452-1024x1024.jpg);
+}
+
+#service .contenedor-imagen {
+  display: flex;
+}
+
+#service .imagen {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-#creative .espacio {
-  padding: 30px 0;
-}
-#creative .tarjeta {
-  width: 990px;
   height: 22rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2C2C2C;
+  flex-grow: 1;
+  background-clip: content-box;
+  transition: 500ms;
 }
-#creative .tarjeta .texto1 {
-  width: 49%;
-  height: 22rem;
+
+#service .imagen:hover {
+  scale: 110%;
+}
+
+#service .contenedor-texto {
+  margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
+  flex-direction: column;
+  width: auto;
+  height: 22rem;
   padding: 20px;
-  background-color: black;
 }
-#creative .tarjeta .texto1 h4 {
-  font-size: 3.5rem;
+
+#service .contenedor-texto h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 0;
+  color: #E53E1F;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
-#creative .tarjeta .texto {
-  width: 49%;
+
+#service h5 {
+  font-size: 1.5rem;
+}
+
+#service .card-servicios:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+}
+
+#service .icono {
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 20px;
-  line-height: 100px;
+  font-size: 2rem;
+  padding-top: 30px;
+  color: black;
+  text-decoration: none;
 }
 
 #header-foto {
@@ -236,6 +325,10 @@ span {
   background-size: cover;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
 }
 #header-foto .imagen2 {
   background-image: url(img/istockphoto-694960328-1024x1024.jpg);
@@ -244,6 +337,10 @@ span {
   background-size: cover;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
 }
 #header-foto .imagen3 {
   background-image: url(img/istockphoto-1019702098-1024x1024.jpg);
@@ -252,6 +349,10 @@ span {
   background-size: cover;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
 }
 #header-foto .imagen4 {
   background-image: url(img/istockphoto-1759364452-1024x1024.jpg);
@@ -260,6 +361,10 @@ span {
   background-size: cover;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
 }
 
 #header-foto h1 {
@@ -268,7 +373,6 @@ span {
   font-weight: 700;
   color: #E53E1F;
   text-align: center;
-  padding-top: 200px;
 }
 
 #modulo {
@@ -278,16 +382,22 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 #modulo .frase {
   width: 990px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 #modulo .frase h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: white;
   text-align: center;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
 }
 #modulo .frase h4 {
   font-size: 1.8rem;
@@ -295,8 +405,7 @@ span {
   text-align: center;
   line-height: 1.2;
   text-transform: uppercase;
-  transition: transform 1s;
-  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 #modulo .frase h3 {
   font-size: 1.5rem;
@@ -306,44 +415,74 @@ span {
   padding: 0 90px;
   line-height: 1.2;
   padding-top: 20px;
-  transition: transform 1s;
-  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
+  animation-delay: 3s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-@keyframes show {
-  from {
-    opacity: 0;
-    scale: 50%;
-  }
+section .animate {
+  opacity: 0;
+  filter: blur(9px);
+  transition: 2s;
+  transform: scale(0.5);
 }
-to {
+
+section.show-animate .animate {
   opacity: 1;
-  scale: 100%;
+  filter: blur(0);
+  transform: scale(1);
 }
 
-.frasegrande {
-  view-timeline-name: --reveal;
-  animation-name: show;
-  animation-fill-mode: both;
-  animation-timeline: --reveal;
-  animation-range: entry 25% cover 50%;
+#modulo .fraselegal {
+  width: 990px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#modulo .fraselegal h2 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
   transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
 }
 
-.frasetitulo {
-  view-timeline-name: --reveal;
-  animation-name: show;
-  animation-fill-mode: both;
-  animation-timeline: --reveal;
-  animation-range: entry 25% cover 50%;
+#modulo .fraselegal h5 {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
 }
 
-h3 {
-  view-timeline-name: --reveal;
-  animation-name: show;
-  animation-fill-mode: both;
-  animation-timeline: --reveal;
-  animation-range: entry 25% cover 50%;
+#modulo .fraselegal h4 {
+  font-size: 1.6rem;
+  color: #E53E1F;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: transform 1s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+#modulo .fraselegal h3 {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 0 90px;
+  line-height: 1.6;
+  padding-top: 20px;
+  transition: transform 1s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+#modulo .fraselegal .texto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 900px;
 }
 
 #plataformas {
@@ -355,33 +494,36 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  animation: color 4s infinite;
 }
 
 #plataformas .cards {
   width: 990px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px;
 }
 
 #plataformas .card {
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   border: 3px solid white;
-  background-color: black;
+  background-color: transparent;
   padding: 30px 0;
-  animation: fadeIn 1s ease forwards;
-  opacity: 0;
-  animation-delay: var(--delay);
+  white-space: nowrap;
 }
 
 #plataformas .card h3 {
-  color: white;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 800;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 #plataformas h3:hover {
@@ -393,25 +535,23 @@ h3 {
   padding: 10px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#plataformas .card i {
+  font-size: 1.5rem;
+  padding-right: 10px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
+
 #mensaje {
   width: 100vw;
   height: 40vh;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  animation: color 4s infinite;
 }
 
 #mensaje .cards {
@@ -419,7 +559,9 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 40px;
+  overflow-x: hidden;
 }
 
 #mensaje .card {
@@ -427,18 +569,18 @@ h3 {
   justify-content: center;
   border-radius: 5px;
   border: 3px solid white;
-  background-color: black;
   padding: 30px 0;
-  animation: fadeIn 1s ease forwards;
-  opacity: 0;
-  animation-delay: var(--delay);
+  background-color: transparent;
 }
 
 #mensaje .card h3 {
   color: white;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 800;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.96, 1.07);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 #mensaje h3:hover {
@@ -450,11 +592,68 @@ h3 {
   padding: 10px;
 }
 
+section .animacion {
+  opacity: 0;
+  filter: blur(9px);
+  transition: 2s;
+  transform: translateX(100%);
+}
+
+section.show-animacion .animacion {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 #piedepagina {
   margin: 0 auto;
   width: 100vw;
   height: 5rem;
   background-color: #121212;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+section h2 {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+}
+section h4 {
+  font-size: 1.8rem;
+  color: #E53E1F;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+section h3 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 0 90px;
+  line-height: 1.2;
+  padding-top: 20px;
+}
+
+section .animate {
+  transition: 1s;
+}
+
+.sec-tres .animate {
+  transform: scale(0.7);
+  background-color: yellowgreen;
+}
+
+.sec-tres.show-animate .animate {
+  transform: scale(1);
+  background-color: yellowgreen;
 }
 
 /*# sourceMappingURL=style.css.map */

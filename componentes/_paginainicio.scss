@@ -4,17 +4,32 @@
 #presentacion{
     width: 100vw;
     height: 100vh;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+
     .contenedor {
+        width: 100%;
+        height: 100%;
         position: relative;
         display: flex;
         justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
+ }
+   
+#presentacion .foto-inicio{
+    background-image: url(img/BNclose-hands-using-smart-phone-course-deadline-businesswoman-texting-late-night-while-working-important-project-using-smartphone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
     .contenedor_texto {
         display: flex;
         align-items: center;
@@ -42,171 +57,224 @@
         color: white;
         font-size: 3rem;
     }
+ 
 
+    @keyframes color {
+        0% {
+            background-color: #232323;
+        }
 
-   
-    
-    // cards servicios
+        25% {
+            background-color: #2c2c2c;
+        }
+        50% {
+            background-color: #373737;
+        }
+        75% {
+            background-color: #484848;
+        }
+        100% {
+            background-color: #656565;
+        }
 
-    #servicios{
+    }
+
+    // menu
+
+    #barra{
         width: 100vw;
-        height: 100vh;
-        background-color: $color1;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        animation: color 4s infinite;
+    }
 
-        .cards{
+        #barra .contenedor-card{
             width: $width;
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            padding: 100px 0;
         }
 
-        .card{
-            background-color: black;
-            padding: 40px 20px;
-            border-radius: 5px;
+      #barra  .card-servicios{
+            height: auto;
+            background-color: snow;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius: 12px;
             border: 3px solid  white;
-        
+            background-color: transparent;
+            box-shadow:$shadow;
+            transition: all 0.3s;
+            overflow: hidden;
         }
+        .margen{
+            padding: 20px;
+        }
+      
+   
+    
+    #barra .contenedor-texto {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 16rem;
+        padding: 20px;
+        }
+         
+    #barra .contenedor-texto h3{
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 10px 0;
+        color: $color2;
+        }
+    #barra  h5 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        }
+            
+    #barra  .card-servicios:hover{
+            transform: scale(1.02);
+            box-shadow: $shadow2;
+            }
 
-        h2{
-            color: white;
-            font-weight: 700;
-            text-align: center;
-        }
+
+     #barra .icono {
+        display: flex;
+        justify-content: center;
+       font-size: 2rem;
+       padding-top: 30px;
+       color: white;
+       text-decoration: none;
+
+     }
+      
+  
+
+
+            section .animate{
+                opacity: 0;
+                filter: blur(9px);
+                transition: 2s;
+                transform: scale(.5);
+            }
+            
+            section.show-animate .animate{
+                opacity: 1;
+                filter: blur(0);
+                transform: scale(1);
+            }
+            
+
+    
+
+    // servicios cards grandes
+
+    #service{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        animation: color 4s infinite;
     }
 
-#servicios .margen{
-    padding: 10px;
-}
-
-
-// seccion agendar reunión
-
-#reunion{
-    width: 100vw;
-    height: 80vh;
-    background-color: #a0a0a0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    .espacio{
-        padding: 30px 0;
-    }
-
-    .tarjeta{
+     
+   
+  #service  .card-servicios{
         width: $width;
-        height: 22rem;
+        background-color: snow;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
-        background-color: $color1;
-
-        
-
-        .texto1{
-            width: 49%;
-            height: 22rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 20px;
-            background-color: black;
-
-            h4{
-                font-size: 3.5rem;
-            }
-        }
-        .texto{
-            width: 49%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 20px;
-            line-height: 100px;
-        }
-
-
-
-
-
+        border-radius: 12px;
+        box-shadow:$shadow;
+        transition: all 0.3s;
+        overflow: hidden;
     }
-
+    .margen{
+        padding:50px 20px;
+    }
   
+#service .contenedor-imagen .foto1{
+    background-image: url(img/istockphoto-2165505447-1024x1024.jpg);    
 }
-
-
-// seccion agendar reunión
-
-#creative{
-    width: 100vw;
-    height: 80vh;
+#service .contenedor-imagen .foto2{
+    background-image: url(img/istockphoto-694960328-1024x1024.jpg);    
+}
+#service .contenedor-imagen .foto3{
+    background-image: url(img/istockphoto-1019702098-1024x1024.jpg);    
+}
+#service .contenedor-imagen .foto4{
+    background-image: url(img/istockphoto-1759364452-1024x1024.jpg);    
+}
+#service  .contenedor-imagen{
+    display: flex;
+    }
+#service .imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 22rem;
+    flex-grow: 1;
+    background-clip: content-box;
+    transition: 500ms; 
+    }
+#service .imagen:hover{
+    scale: 110%;
+    }
+#service .contenedor-texto {
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    
-    background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-    .espacio{
-        padding: 30px 0;
+    flex-direction: column;
+    width: auto;
+    height: 22rem;
+    padding: 20px;
     }
-
-    .tarjeta{
-        width: $width;
-        height: 22rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $color1;
-
+     
+#service .contenedor-texto h3{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 0;
+    color: $color2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+#service  h5 {
+    font-size: 1.5rem;
+    }
         
-
-        .texto1{
-            width: 49%;
-            height: 22rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 20px;
-            background-color: black;
-
-            h4{
-                font-size: 3.5rem;
-            }
-        }
-        .texto{
-            width: 49%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 20px;
-            line-height: 100px;
+#service  .card-servicios:hover{
+        transform: scale(1.02);
+        box-shadow: $shadow2;
         }
 
+#service .icono{
+    display: flex;
+    justify-content: center;
+   font-size: 2rem;
+   padding-top: 30px;
+   color: black;
+   text-decoration: none;
+}
+    
 
 
 
 
-    }
+
+
+    
 
   
-}
