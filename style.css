@@ -174,14 +174,15 @@ span {
 }
 
 #barra .contenedor-texto h3 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   padding: 10px 0;
   color: #E53E1F;
 }
 
 #barra h5 {
   font-size: 1.2rem;
+  font-weight: 500;
   color: white;
   text-align: center;
 }
@@ -194,8 +195,8 @@ span {
 #barra .icono {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
-  padding-top: 30px;
+  font-size: 2.2rem;
+  padding: 10px;
   color: white;
   text-decoration: none;
 }
@@ -295,6 +296,11 @@ section.show-animate .animate {
 
 #service h5 {
   font-size: 1.5rem;
+}
+
+#service h6 {
+  font-size: 1.2rem;
+  width: 80%;
 }
 
 #service .card-servicios:hover {
