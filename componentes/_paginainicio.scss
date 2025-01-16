@@ -27,9 +27,6 @@
     background-attachment: fixed;
 
 }
-
-
-
     .contenedor_texto {
         display: flex;
         align-items: center;
@@ -208,6 +205,7 @@
   #service  .card-servicios{
         width: $width;
         background-color: snow;
+        background-color: #faf9f8;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -222,16 +220,16 @@
     }
   
 #service .contenedor-imagen .foto1{
-    background-image: url(img/istockphoto-2165505447-1024x1024.jpg);    
+    background-image: url(img/Marketing_RedHunt.jpg);    
 }
 #service .contenedor-imagen .foto2{
-    background-image: url(img/istockphoto-694960328-1024x1024.jpg);    
+    background-image: url(img/Creative_RedHunt.jpg);    
 }
 #service .contenedor-imagen .foto3{
-    background-image: url(img/istockphoto-1019702098-1024x1024.jpg);    
+    background-image: url(img/Legal_RedHunt.jpg);    
 }
 #service .contenedor-imagen .foto4{
-    background-image: url(img/istockphoto-1759364452-1024x1024.jpg);    
+    background-image: url(img/Community_RedHunt.jpg);    
 }
 #service  .contenedor-imagen{
     display: flex;
@@ -289,27 +287,40 @@
     }
 
     #service  h6 {
-        font-size: 1.2rem;
-        padding: 10px 0;
-        }
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: $color1;
+    color: #373737;
+    color: #484848;
+    padding: 10px 0;
+    }
         
 #service  .card-servicios:hover{
         transform: scale(1.02);
         box-shadow: $shadow2;
         }
 
-#service .icono{
-    display: flex;
+
+    
+#service .btn{
+    color: $color1;
+ display: flex;
     justify-content: center;
    font-size: 2rem;
    padding-top: 30px;
    color: black;
    text-decoration: none;
+   border: none;
+
 }
-    
 
-
-
+#service .btn:hover{
+    color: #656565;
+    transform: scale(1.1);
+}
+#service .btn:active{
+    color: $color2;
+}
 
 
 

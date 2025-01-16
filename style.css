@@ -236,6 +236,7 @@ section.show-animate .animate {
 #service .card-servicios {
   width: 990px;
   background-color: snow;
+  background-color: #faf9f8;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -251,19 +252,19 @@ section.show-animate .animate {
 }
 
 #service .contenedor-imagen .foto1 {
-  background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
+  background-image: url(img/Marketing_RedHunt.jpg);
 }
 
 #service .contenedor-imagen .foto2 {
-  background-image: url(img/istockphoto-694960328-1024x1024.jpg);
+  background-image: url(img/Creative_RedHunt.jpg);
 }
 
 #service .contenedor-imagen .foto3 {
-  background-image: url(img/istockphoto-1019702098-1024x1024.jpg);
+  background-image: url(img/Legal_RedHunt.jpg);
 }
 
 #service .contenedor-imagen .foto4 {
-  background-image: url(img/istockphoto-1759364452-1024x1024.jpg);
+  background-image: url(img/Community_RedHunt.jpg);
 }
 
 #service .contenedor-imagen {
@@ -324,6 +325,10 @@ section.show-animate .animate {
 
 #service h6 {
   font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #2C2C2C;
+  color: #373737;
+  color: #484848;
   padding: 10px 0;
 }
 
@@ -332,13 +337,24 @@ section.show-animate .animate {
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
 }
 
-#service .icono {
+#service .btn {
+  color: #2C2C2C;
   display: flex;
   justify-content: center;
   font-size: 2rem;
   padding-top: 30px;
   color: black;
   text-decoration: none;
+  border: none;
+}
+
+#service .btn:hover {
+  color: #656565;
+  transform: scale(1.1);
+}
+
+#service .btn:active {
+  color: #E53E1F;
 }
 
 #header-foto {
@@ -349,7 +365,7 @@ section.show-animate .animate {
   align-items: center;
 }
 #header-foto .imagen1 {
-  background-image: url(img/istockphoto-2165505447-1024x1024.jpg);
+  background-image: url(img/Marketing_RedHunt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -361,7 +377,7 @@ section.show-animate .animate {
   background-attachment: fixed;
 }
 #header-foto .imagen2 {
-  background-image: url(img/istockphoto-694960328-1024x1024.jpg);
+  background-image: url(img/Creative_RedHunt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -373,7 +389,7 @@ section.show-animate .animate {
   background-attachment: fixed;
 }
 #header-foto .imagen3 {
-  background-image: url(img/istockphoto-1019702098-1024x1024.jpg);
+  background-image: url(img/Legal_RedHunt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -385,7 +401,7 @@ section.show-animate .animate {
   background-attachment: fixed;
 }
 #header-foto .imagen4 {
-  background-image: url(img/istockphoto-1759364452-1024x1024.jpg);
+  background-image: url(img/Community_RedHunt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -440,6 +456,7 @@ section.show-animate .animate {
 #modulo .frase h3 {
   font-size: 1.5rem;
   color: white;
+  color: #faf9f8;
   text-align: center;
   justify-content: center;
   padding: 0 90px;
@@ -518,7 +535,6 @@ section.show-animate .animate {
 #plataformas {
   width: 100vw;
   height: 100vh;
-  background-color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -554,6 +570,7 @@ section.show-animate .animate {
   font-weight: 800;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  color: #faf9f8;
 }
 
 #plataformas h3:hover {
@@ -635,55 +652,107 @@ section.show-animacion .animacion {
   transform: translateX(0);
 }
 
+/* footer*/
 #piedepagina {
   margin: 0 auto;
-  width: 100vw;
-  height: 5rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   background-color: #121212;
+  padding: 50px 0;
 }
 
-section {
+#piedepagina .menu {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#piedepagina .logo {
+  background-image: url(img/logo_redHunt.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 130px;
+  height: 81px;
+  justify-content: center;
+  align-items: center;
+}
+
+#piedepagina .frase {
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #faf9f8;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
+  padding: 40px 0;
 }
-section h2 {
-  font-size: 6rem;
-  color: white;
-  text-align: center;
+
+#piedepagina .frase .titulo {
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: none;
+  color: #faf9f8;
+  padding-bottom: 10px;
 }
-section h4 {
-  font-size: 1.8rem;
+
+#piedepagina .frase .link a {
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+  color: #faf9f8;
+}
+
+#piedepagina .frase .link a:hover {
+  color: #656565;
+  transform: scale(1.1);
+}
+
+#piedepagina .frase .link a:active {
   color: #E53E1F;
-  text-align: center;
-  line-height: 1.2;
-  text-transform: uppercase;
 }
-section h3 {
+
+#piedepagina ul {
+  list-style: none;
+}
+
+#piedepagina ul .icono {
+  font-size: 2rem;
+  height: auto;
+  padding: 0 10px;
+  color: #faf9f8;
+}
+
+#piedepagina ul .icono:hover {
+  color: #656565;
+}
+
+#piedepagina ul .icono:active {
+  color: #E53E1F;
+}
+
+#piedepagina ul li .icono3 {
+  height: auto;
   font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  justify-content: center;
-  padding: 0 90px;
-  line-height: 1.2;
-  padding-top: 20px;
+  padding: 10px;
 }
 
-section .animate {
-  transition: 1s;
-}
-
-.sec-tres .animate {
-  transform: scale(0.7);
-  background-color: yellowgreen;
-}
-
-.sec-tres.show-animate .animate {
-  transform: scale(1);
-  background-color: yellowgreen;
+#piedepagina ul li {
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

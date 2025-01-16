@@ -10,7 +10,7 @@
     align-items: center;
 
     .imagen1{
-background-image: url(img/istockphoto-2165505447-1024x1024.jpg);    
+background-image: url(img/Marketing_RedHunt.jpg);    
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -23,7 +23,7 @@ background-attachment: fixed;
 }
 
 .imagen2{
-    background-image: url(img/istockphoto-694960328-1024x1024.jpg);    
+    background-image: url(img/Creative_RedHunt.jpg);    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -37,7 +37,7 @@ background-attachment: fixed;
     }
 
     .imagen3{
-        background-image: url(img/istockphoto-1019702098-1024x1024.jpg);    
+        background-image: url(img/Legal_RedHunt.jpg);    
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -51,7 +51,7 @@ background-attachment: fixed;
         }    
 
     .imagen4{
-        background-image: url(img/istockphoto-1759364452-1024x1024.jpg);    
+        background-image: url(img/Community_RedHunt.jpg);    
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -106,11 +106,11 @@ background-attachment: fixed;
             text-transform: uppercase;
             transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
 
-           
         }
         h3{
             font-size: 1.5rem;
             color: white;
+            color:#faf9f8 ;
             text-align: center;
             justify-content: center;
             padding: 0 90px;
@@ -202,7 +202,6 @@ overflow-x: hidden;
 #plataformas{
     width: 100vw;
     height: 100vh;
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -245,6 +244,7 @@ overflow-x: hidden;
     font-weight: 800;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    color: #faf9f8;
 
    
 }
