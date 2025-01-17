@@ -652,6 +652,65 @@ section.show-animacion .animacion {
   transform: translateX(0);
 }
 
+/* header  */
+@media screen and (max-width: 550px) {
+  #header-foto .imagen1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header-foto h1 {
+    color: aqua;
+    width: 90%;
+  }
+}
+/* texto emergentes  */
+@media screen and (max-width: 550px) {
+  #modulo {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 550px) {
+  #modulo .frase h2 {
+    font-size: 3rem;
+    padding: 0;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #modulo .frase h3 {
+    font-size: 1rem;
+    padding: 0;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #modulo .frase h4 {
+    font-size: 2rem;
+    padding: 0;
+    width: 85%;
+  }
+}
+/* plataformas  */
+@media screen and (max-width: 550px) {
+  #plataformas {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 550px) {
+  #plataformas .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  #plataformas .cards .card {
+    width: 100%;
+    justify-content: center;
+  }
+}
 /* footer*/
 #piedepagina {
   margin: 0 auto;
