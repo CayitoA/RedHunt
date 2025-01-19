@@ -147,7 +147,6 @@ span {
 
 #barra .card-servicios {
   height: auto;
-  background-color: snow;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -170,6 +169,7 @@ span {
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 16rem;
   padding: 20px;
@@ -179,6 +179,7 @@ span {
 #barra .contenedor-texto h3 {
   font-size: 1.8rem;
   font-weight: 600;
+  text-align: center;
   padding: 10px 0;
   color: #E53E1F;
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -187,7 +188,7 @@ span {
 #barra h5 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: white;
+  color: #faf9f8;
   text-align: center;
   animation-delay: 3s;
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -654,13 +655,21 @@ section.show-animacion .animacion {
 
 /* header  */
 @media screen and (max-width: 550px) {
-  #header-foto .imagen1 {
+  #header-foto .imagen1, .imagen2, .imagen3 {
+    height: cover;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header-foto .imagen4 {
+    height: cover;
     width: 100%;
   }
 }
 @media screen and (max-width: 550px) {
   #header-foto h1 {
-    color: aqua;
+    font-size: 3rem;
+    padding: 0;
     width: 90%;
   }
 }
@@ -694,6 +703,7 @@ section.show-animacion .animacion {
 /* plataformas  */
 @media screen and (max-width: 550px) {
   #plataformas {
+    padding: 50px 15px;
     height: fit-content;
   }
 }
@@ -706,9 +716,81 @@ section.show-animacion .animacion {
   }
 }
 @media screen and (max-width: 550px) {
-  #plataformas .cards .card {
-    width: 100%;
+  #plataformas .hola {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  #plataformas .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #plataformas .cards .hola {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* INICIO header  */
+@media screen and (max-width: 550px) {
+  #header-foto .imagen1, .imagen2, .imagen3 {
+    height: cover;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header-foto .imagen4 {
+    height: cover;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #presentacion .contenedor_texto {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #presentacion .contenedor_texto h1 {
+    font-size: 3rem;
+  }
+}
+/* inicio mini cards servicos   */
+@media screen and (max-width: 550px) {
+  #modulo #barra {
+    padding: 0;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 550px) {
+  #modulo #barra .contenedor-card {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+  }
+}
+@media screen and (max-width: 550px) {
+  #barra .margen {
+    padding: 20px;
+    width: 85%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  #barra .card-servicios {
+    width: 85%;
+    background-color: yellow;
   }
 }
 /* footer*/

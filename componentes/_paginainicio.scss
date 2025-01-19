@@ -88,7 +88,7 @@
         animation: color 4s infinite;
     }
 
-        #barra .contenedor-card{
+    #barra .contenedor-card{
             width: $width;
             display: flex;
             flex-direction: row;
@@ -97,9 +97,8 @@
             padding: 100px 0;
         }
 
-      #barra  .card-servicios{
+    #barra  .card-servicios{
             height: auto;
-            background-color: snow;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -110,62 +109,58 @@
             box-shadow:$shadow;
             transition: all 0.3s;
             overflow: hidden;
-
             animation-duration: 3s;
-       animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
         }
+
         .margen{
             padding: 20px;
         }
       
-   
-    
     #barra .contenedor-texto {
         margin: 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 100%;
         height: 16rem;
         padding: 20px;
         transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
-
         }
          
     #barra .contenedor-texto h3{
         font-size: 1.8rem;
         font-weight: 600;
+        text-align: center;
         padding: 10px 0;
         color: $color2;
         transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
-
         }
+
     #barra  h5 {
         font-size: 1.2rem;
         font-weight: 500;
-        color: white;
+        color: #faf9f8;
         text-align: center;
         animation-delay: 3s;
-
         transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
-
         }
             
     #barra  .card-servicios:hover{
-            transform: scale(1.02);
-            box-shadow: $shadow2;
-            }
-
+        transform: scale(1.02);
+        box-shadow: $shadow2;
+        }
 
      #barra .icono {
         display: flex;
         justify-content: center;
-       font-size: 2.2rem;
-       padding: 10px;
-       padding-top: 15px;
-       color: white;
-       text-decoration: none;
-       animation-duration: 3s;
-       animation-iteration-count: infinite;
+        font-size: 2.2rem;
+        padding: 10px;
+        padding-top: 15px;
+        color: white;
+        text-decoration: none;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
 
      }
       

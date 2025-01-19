@@ -337,13 +337,20 @@ overflow-x: hidden;
 
 /* header  */
 
-@media screen and (max-width:550px) { #header-foto .imagen1{
+@media screen and (max-width:550px) { #header-foto .imagen1 , .imagen2 , .imagen3 {
+
+    height: cover;
     width:100%;}
 }
-    
+@media screen and (max-width:550px) { #header-foto .imagen4 {
+
+    height: cover;
+    width:100%;}
+}  
 @media screen and (max-width:550px) { #header-foto h1 {
-    color: aqua;
-    width:90%;}
+    font-size: 3rem;
+    padding: 0;
+    width: 90%;}
 }
     
 /* texto emergentes  */
@@ -369,6 +376,7 @@ overflow-x: hidden;
 
 /* plataformas  */
 @media screen and (max-width:550px) { #plataformas {
+    padding: 50px 15px;
     height: fit-content;
 }
 }
@@ -381,8 +389,83 @@ overflow-x: hidden;
     padding: 0;
 }
 }
-@media screen and (max-width:550px) { #plataformas .cards .card{
-    width:100%;
+@media screen and (max-width:550px) { #plataformas .hola{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 0;
+}
+}
+
+
+
+
+@media screen and (max-width:550px) { #plataformas .cards  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+  
 }
 }  
+
+@media screen and (max-width:550px) { #plataformas .cards .hola {
+   background-color: yellow;
+   display: flex;
+   justify-content: center;
+  
+}
+}  
+
+
+
+/* INICIO header  */
+
+@media screen and (max-width:550px) { #header-foto .imagen1 , .imagen2 , .imagen3 {
+
+    height: cover;
+    width:100%;}
+}
+@media screen and (max-width:550px) { #header-foto .imagen4 {
+
+    height: cover;
+    width:100%;}
+}  
+@media screen and (max-width:550px) { #presentacion .contenedor_texto  {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    width: 90%;}
+}
+@media screen and (max-width:550px) { #presentacion .contenedor_texto h1 {
+    font-size: 3rem;
+    
+}
+}
+/* inicio mini cards servicos   */
+@media screen and (max-width:550px) { #modulo #barra {
+    padding: 0;
+    height: fit-content;}
+}
+@media screen and (max-width:550px) { #modulo #barra .contenedor-card{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width:550px) { #barra  .margen {
+    padding: 20px;
+    width: 85%;
+justify-content: center;
+    }
+}
+
+@media screen and (max-width:550px) { #barra .card-servicios{
+    width: 85%;
+    background-color: yellow;
+    }
+}
