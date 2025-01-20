@@ -708,7 +708,7 @@ section.show-animacion .animacion {
 }
 @media screen and (max-width: 550px) {
   #modulo .fraselegal h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding: 0;
     width: 85%;
   }
