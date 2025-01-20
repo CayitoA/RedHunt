@@ -10,16 +10,16 @@
     align-items: center;
 
     .imagen1{
-background-image: url(img/Marketing_RedHunt.jpg);    
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-background-attachment: fixed;
+    background-image: url(img/Marketing_RedHunt.jpg);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
 }
 
 .imagen2{
@@ -89,14 +89,11 @@ background-attachment: fixed;
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
-        
-        
         h2{
             font-size: 5rem;
             color: white;
             text-align: center;
             transition-timing-function: cubic-bezier(1,-0.01,.96,1.07);
-
         }
         h4{
             font-size: 1.8rem;
@@ -105,7 +102,6 @@ background-attachment: fixed;
             line-height: 1.2;
             text-transform: uppercase;
             transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
-
         }
         h3{
             font-size: 1.5rem;
@@ -118,9 +114,6 @@ background-attachment: fixed;
             padding-top: 20px;
             animation-delay: 3s;
             transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
-
-          
-            
         }   
     }
 }
@@ -223,10 +216,8 @@ overflow-x: hidden;
 
 #plataformas .card{
     display: flex;
-   
     align-items: center;
     justify-content: center;
-
     border-radius: 5px;
     border: 3px solid  white;
     background-color: transparent;
@@ -477,7 +468,7 @@ overflow-x: hidden;
 
 @media screen and (max-width:550px) { #barra  .margen {
     padding: 20px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     }
@@ -485,6 +476,16 @@ overflow-x: hidden;
 
 @media screen and (max-width:550px) { #barra .card-servicios{
     width: 85%;
+    }
+}
+
+/* INDEX formulario    */
+@media screen and (max-width:550px) { #formulario  {
+    padding: 15px;
+    }
+}
+@media screen and (max-width:550px) { #formulario .contenedor-formulario  {
+    height: fit-content;
     }
 }
 

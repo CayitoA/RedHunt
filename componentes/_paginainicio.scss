@@ -80,6 +80,7 @@
 
     #barra{
         width: 100vw;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -89,28 +90,28 @@
     }
 
     #barra .contenedor-card{
-            width: $width;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 100px 0;
+        width: $width;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 100px 0;
         }
 
     #barra  .card-servicios{
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            border-radius: 12px;
-            border: 3px solid  white;
-            background-color: transparent;
-            box-shadow:$shadow;
-            transition: all 0.3s;
-            overflow: hidden;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 12px;
+        border: 3px solid  white;
+        background-color: transparent;
+        box-shadow:$shadow;
+        transition: all 0.3s;
+        overflow: hidden;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
         }
 
         .margen{
@@ -199,7 +200,6 @@
    
   #service  .card-servicios{
         width: $width;
-        background-color: snow;
         background-color: #faf9f8;
         display: flex;
         flex-direction: row;
@@ -281,11 +281,10 @@
     padding: 10px 0;
     }
 
-    #service  h6 {
+#service  h6 {
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: $color1;
-    color: #373737;
     color: #484848;
     padding: 10px 0;
     }
@@ -299,16 +298,14 @@
     
 #service .btn{
     color: $color1;
- display: flex;
+    display: flex;
     justify-content: center;
-   font-size: 2rem;
-   padding-top: 30px;
-   color: black;
-   text-decoration: none;
-   border: none;
-
+    font-size: 2rem;
+    padding-top: 30px;
+    color: $color1;
+    text-decoration: none;
+    border: none;
 }
-
 #service .btn:hover{
     color: #656565;
     transform: scale(1.1);
@@ -319,6 +316,84 @@
 
 
 
-    
+
+    // formulario contacto
+
+    #formulario{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        animation: color 4s infinite;
+    }
+
+    #formulario .contenedor-formulario {
+        width: $width;
+        height: 25rem;
+        background-color: #dee2e6;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 50px 0 90px 0;
+    }
+
+    #formulario .frase-formulario{
+        background-color: $color2;
+        background-color: #4d4d4d;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+            color: #faf9f8;
+            padding-bottom: 15px;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        h4{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    #formulario .datos-formulario{
+        padding: 25px;
+        height: 25rem;
+        h3{
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+        label{
+            font-size: 0.9rem;
+        }
+        .btn-formulario{
+            padding-top: 20px;
+        }
+        .btn-primary{
+            background-color: $color1;
+            border: none;
+            text-transform: uppercase;    
+            padding: 5px 20px;
+        }
+        .btn-primary:hover{
+            background-color: #656565;
+            border: none;
+        }
+        .btn-primary:active{
+            background-color: $color2;
+            border: none;
+        }
+    }
+     
 
   

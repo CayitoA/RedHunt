@@ -128,6 +128,7 @@ span {
 }
 #barra {
   width: 100vw;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -236,7 +237,6 @@ section.show-animate .animate {
 
 #service .card-servicios {
   width: 990px;
-  background-color: snow;
   background-color: #faf9f8;
   display: flex;
   flex-direction: row;
@@ -328,7 +328,6 @@ section.show-animate .animate {
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: #2C2C2C;
-  color: #373737;
   color: #484848;
   padding: 10px 0;
 }
@@ -344,7 +343,7 @@ section.show-animate .animate {
   justify-content: center;
   font-size: 2rem;
   padding-top: 30px;
-  color: black;
+  color: #2C2C2C;
   text-decoration: none;
   border: none;
 }
@@ -356,6 +355,82 @@ section.show-animate .animate {
 
 #service .btn:active {
   color: #E53E1F;
+}
+
+#formulario {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation: color 4s infinite;
+}
+
+#formulario .contenedor-formulario {
+  width: 990px;
+  height: 25rem;
+  background-color: #dee2e6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 50px 0 90px 0;
+}
+
+#formulario .frase-formulario {
+  background-color: #E53E1F;
+  background-color: #4d4d4d;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+#formulario .frase-formulario h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #faf9f8;
+  padding-bottom: 15px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#formulario .frase-formulario h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#formulario .datos-formulario {
+  padding: 25px;
+  height: 25rem;
+}
+#formulario .datos-formulario h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+#formulario .datos-formulario label {
+  font-size: 0.9rem;
+}
+#formulario .datos-formulario .btn-formulario {
+  padding-top: 20px;
+}
+#formulario .datos-formulario .btn-primary {
+  background-color: #2C2C2C;
+  border: none;
+  text-transform: uppercase;
+  padding: 5px 20px;
+}
+#formulario .datos-formulario .btn-primary:hover {
+  background-color: #656565;
+  border: none;
+}
+#formulario .datos-formulario .btn-primary:active {
+  background-color: #E53E1F;
+  border: none;
 }
 
 #header-foto {
@@ -809,7 +884,7 @@ section.show-animacion .animacion {
 @media screen and (max-width: 550px) {
   #barra .margen {
     padding: 20px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -817,6 +892,17 @@ section.show-animacion .animacion {
 @media screen and (max-width: 550px) {
   #barra .card-servicios {
     width: 85%;
+  }
+}
+/* INDEX formulario    */
+@media screen and (max-width: 550px) {
+  #formulario {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #formulario .contenedor-formulario {
+    height: fit-content;
   }
 }
 /* INDEX footer    */
