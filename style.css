@@ -305,9 +305,8 @@ section.show-animate .animate {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 460px;
   height: 24rem;
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 #service .contenedor-texto h3 {
@@ -403,7 +402,7 @@ section.show-animate .animate {
   animation-duration: 9s;
 }
 #formulario .frase-formulario h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   background-color: #faf9f8;
   padding: 5px;
@@ -431,6 +430,8 @@ section.show-animate .animate {
 }
 #formulario .datos-formulario .btn-formulario {
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 #formulario .datos-formulario .btn-primary {
   background-color: #2C2C2C;
@@ -744,15 +745,20 @@ section.show-animacion .animacion {
 
 /* header  */
 @media screen and (max-width: 550px) {
-  #header-foto .imagen1, .imagen2, .imagen3 {
-    height: cover;
-    width: 100%;
+  #header-foto {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header-foto .imagen1 {
+    background-position-y: center;
+    height: 100%;
   }
 }
 @media screen and (max-width: 550px) {
   #header-foto .imagen4 {
-    height: cover;
-    width: 100%;
+    height: 100%;
+    background-position: center;
   }
 }
 @media screen and (max-width: 550px) {
@@ -854,18 +860,6 @@ section.show-animacion .animacion {
 }
 /* INDEX header  */
 @media screen and (max-width: 550px) {
-  #header-foto .imagen1, .imagen2, .imagen3 {
-    height: cover;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 550px) {
-  #header-foto .imagen4 {
-    height: cover;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 550px) {
   #presentacion .contenedor_texto {
     display: flex;
     flex-direction: column;
@@ -908,6 +902,29 @@ section.show-animacion .animacion {
     width: 85%;
   }
 }
+/* INDEX card grandes    */
+@media screen and (max-width: 550px) {
+  #service .margen {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  #service .card-servicios {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #service .card-2 {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media screen and (max-width: 550px) {
+  #service h5 {
+    text-align: center;
+  }
+}
 /* INDEX formulario    */
 @media screen and (max-width: 550px) {
   #formulario {
@@ -923,6 +940,11 @@ section.show-animacion .animacion {
 @media screen and (max-width: 550px) {
   #piedepagina .menu .frase2 {
     justify-content: left;
+  }
+}
+@media screen and (max-width: 550px) {
+  #piedepagina .menu .icono {
+    padding: 0 15px;
   }
 }
 /* footer*/

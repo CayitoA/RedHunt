@@ -327,16 +327,20 @@ overflow-x: hidden;
 
 
 /* header  */
-
-@media screen and (max-width:550px) { #header-foto .imagen1 , .imagen2 , .imagen3 {
-
-    height: cover;
-    width:100%;}
+@media screen and (max-width:550px) { #header-foto   {
+    padding: 0;
+    }
+}
+@media screen and (max-width:550px) { #header-foto .imagen1  {
+    background-position-y: center;
+    height: 100%;
+    }
 }
 @media screen and (max-width:550px) { #header-foto .imagen4 {
 
-    height: cover;
-    width:100%;}
+    height: 100%;
+    background-position: center;
+    }
 }  
 @media screen and (max-width:550px) { #header-foto h1 {
     font-size: 3rem;
@@ -428,16 +432,7 @@ overflow-x: hidden;
 
 /* INDEX header  */
 
-@media screen and (max-width:550px) { #header-foto .imagen1 , .imagen2 , .imagen3 {
-
-    height: cover;
-    width:100%;}
-}
-@media screen and (max-width:550px) { #header-foto .imagen4 {
-
-    height: cover;
-    width:100%;}
-}  
+ 
 @media screen and (max-width:550px) { #presentacion .contenedor_texto  {
     display: flex;
     flex-direction: column;
@@ -479,6 +474,26 @@ overflow-x: hidden;
     }
 }
 
+/* INDEX card grandes    */
+@media screen and (max-width:550px) { #service .margen {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    }
+}
+@media screen and (max-width:550px) { #service  .card-servicios{
+    width: 95%;
+    }
+}
+@media screen and (max-width:550px) { #service  .card-2{
+    flex-wrap: wrap-reverse;    }
+}
+
+@media screen and (max-width:550px) { #service  h5 {
+    text-align: center;   
+    }
+}
+
 /* INDEX formulario    */
 @media screen and (max-width:550px) { #formulario  {
     padding: 15px;
@@ -493,4 +508,7 @@ overflow-x: hidden;
 @media screen and (max-width:550px) { #piedepagina .menu .frase2 {
     justify-content: left;
     }
+}
+@media screen and (max-width:550px) { #piedepagina .menu .icono {
+    padding: 0 15px;    }
 }

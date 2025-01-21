@@ -180,9 +180,6 @@
                 filter: blur(0);
                 transform: scale(1);
             }
-            
-
-    
 
     // servicios cards grandes
 
@@ -196,8 +193,6 @@
         animation: color 4s infinite;
     }
 
-     
-   
   #service  .card-servicios{
         width: $width;
         background-color: #faf9f8;
@@ -263,9 +258,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 460px;
     height: 24rem;
-    padding: 20px;
+    padding: 20px 30px;
     }
      
 #service .contenedor-texto h3{
@@ -364,7 +358,7 @@
             animation-duration: 9s;
         }
         h4{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             text-align: center;
             background-color: #faf9f8;
             padding: 5px;
@@ -394,6 +388,8 @@
         }
         .btn-formulario{
             padding-top: 20px;
+            display: flex;
+            justify-content: center;
         }
         .btn-primary{
             background-color: $color1;
