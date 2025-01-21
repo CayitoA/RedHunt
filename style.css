@@ -13,21 +13,20 @@ body {
   background-color: #2C2C2C;
   width: 100%;
   height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 5;
 }
 
 #menu .container-fluid {
-  display: flex;
-  justify-content: space-between;
+  width: 90%;
   gap: 50px;
 }
 
-#menu .navbar-nav {
+#menu .navbar-brand {
+  padding-left: 20px;
+}
+
+#navbarNav .navbar-nav {
   display: flex;
-  justify-content: flex-end;
 }
 
 #menu ul {

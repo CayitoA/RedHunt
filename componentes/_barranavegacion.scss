@@ -5,23 +5,26 @@
     background-color: $color1;
     width: 100%;
     height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 5;
     }
   
 #menu .container-fluid{
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
+   
     gap: 50px;
+    
     }
 
+    #menu .navbar-brand{
+        padding-left: 20px;
+    }
 
-  #menu  .navbar-nav {
-      display: flex;
-      justify-content: flex-end;
+  #navbarNav {
   }
+  #navbarNav .navbar-nav{
+    display: flex;
+}
+
 #menu ul {
     list-style:none;
     margin:0;
