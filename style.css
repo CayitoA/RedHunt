@@ -746,7 +746,7 @@ section.show-animacion .animacion {
 /* header  */
 @media screen and (max-width: 550px) {
   #header-foto {
-    height: 100vh;
+    height: 85vh;
   }
 }
 @media screen and (max-width: 550px) {
@@ -763,8 +763,10 @@ section.show-animacion .animacion {
 }
 @media screen and (max-width: 550px) {
   #header-foto .imagen4 {
+    height: 100%;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 50%;
   }
 }
 @media screen and (max-width: 550px) {
