@@ -352,18 +352,34 @@
         padding: 20px;
         overflow: hidden;
         h3 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             text-align: center;
             color: #faf9f8;
             padding-bottom: 15px;
             animation-duration: 3s;
             animation-iteration-count: infinite;
+            background-color: $color2;
+            padding: 5px 10px;
+            border-radius: 5px;
+            animation-duration: 9s;
         }
         h4{
             font-size: 1.5rem;
             text-align: center;
+            background-color: #faf9f8;
+            padding: 5px;
+            border-radius: 3px;
         }
     }
+
+    #formulario .foto-contacto{
+        background-image: url(img/Contacto_RedHunt.jpg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    }
+
 
     #formulario .datos-formulario{
         padding: 25px;
