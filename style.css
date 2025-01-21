@@ -746,20 +746,20 @@ section.show-animacion .animacion {
 /* header  */
 @media screen and (max-width: 550px) {
   #header-foto {
-    height: 85vh;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 550px) {
   #header-foto .imagen1 {
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
   }
 }
 @media screen and (max-width: 550px) {
   #header-foto .imagen2 {
-    height: 85vh;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
   }
@@ -767,10 +767,7 @@ section.show-animacion .animacion {
 @media screen and (max-width: 550px) {
   #header-foto .imagen4 {
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
     object-fit: cover;
-    background-position: 50% 50%;
   }
 }
 @media screen and (max-width: 550px) {
