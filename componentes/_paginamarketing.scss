@@ -328,7 +328,7 @@ overflow-x: hidden;
 
 /* header  */
 @media screen and (max-width:550px) { #header-foto   {
-    padding: 0;
+     height: 100vh;
     }
 }
 @media screen and (max-width:550px) { #header-foto .imagen1  {
@@ -337,11 +337,14 @@ overflow-x: hidden;
     height: 100%;
     }
 }
-@media screen and (max-width:550px) { #header-foto .imagen4 {
-    background-size: cover;
-    height: 100%;
+@media screen and (max-width:550px) { #header-foto .imagen2  {
     background-position-y: center;
     }
+}
+@media screen and (max-width:550px) { #header-foto .imagen4 {
+    background-size: cover;
+  
+background-position: center;    }
 }  
 @media screen and (max-width:550px) { #header-foto h1 {
     font-size: 3rem;

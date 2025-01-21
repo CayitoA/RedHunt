@@ -746,7 +746,7 @@ section.show-animacion .animacion {
 /* header  */
 @media screen and (max-width: 550px) {
   #header-foto {
-    padding: 0;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 550px) {
@@ -757,10 +757,14 @@ section.show-animacion .animacion {
   }
 }
 @media screen and (max-width: 550px) {
+  #header-foto .imagen2 {
+    background-position-y: center;
+  }
+}
+@media screen and (max-width: 550px) {
   #header-foto .imagen4 {
     background-size: cover;
-    height: 100%;
-    background-position-y: center;
+    background-position: center;
   }
 }
 @media screen and (max-width: 550px) {
