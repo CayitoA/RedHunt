@@ -746,6 +746,9 @@ section.show-animacion .animacion {
 /* header  */
 @media screen and (max-width: 550px) {
   #header-foto .imagen1 {
+    background-image: url(img/Marketing_RedHunt.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
     object-fit: cover;
     object-position: center;
     background-size: cover;
@@ -753,9 +756,15 @@ section.show-animacion .animacion {
 }
 @media screen and (max-width: 550px) {
   #header-foto .imagen2 {
+    background-size: auto 100%;
     height: 100vh;
     object-fit: cover;
     object-position: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header-foto .imagen3 {
+    background-size: auto 100%;
   }
 }
 @media screen and (max-width: 550px) {
