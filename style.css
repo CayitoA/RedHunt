@@ -751,14 +751,16 @@ section.show-animacion .animacion {
 }
 @media screen and (max-width: 550px) {
   #header-foto .imagen1 {
+    background-size: cover;
     background-position-y: center;
     height: 100%;
   }
 }
 @media screen and (max-width: 550px) {
   #header-foto .imagen4 {
+    background-size: cover;
     height: 100%;
-    background-position: center;
+    background-position-y: center;
   }
 }
 @media screen and (max-width: 550px) {
