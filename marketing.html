@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E53E1F">
     <title>Marketing</title>
     <!-- link css -->
     <link rel="stylesheet" href="style.css">
@@ -29,20 +30,36 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <!--  nav -->
-<nav id="menu">
-    <ul class="categorias">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="marketing.html">Marketing</a></li>
-        <li><a href="creative.html">Creative</a></li>
-        <li><a href="legal.html">Legal</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+<nav id=menu class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo_redHunt.svg" alt="" width="auto" height="35px">
+            </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="marketing.html">Marketing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="creative.html">Creative</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="legal.html">Legal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <!--  header -->
 <header>
     <section id="header-foto">
-        <div class="imagen1 ">
+        <div class="imagen1 img-fluid ">
         <h1 class="animate__animated animate__fadeInRight">Marketing</h1> 
         </div>
     </section>

@@ -14,14 +14,20 @@ body {
   width: 100%;
   height: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  z-index: 5;
 }
 
-#menu .categorias {
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+#menu .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+#menu .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #menu ul {
@@ -49,7 +55,11 @@ body {
 }
 
 #menu a:hover {
-  color: #a0a0a0;
+  color: #656565;
+}
+
+#menu a:active {
+  color: #E53E1F;
 }
 
 #presentacion {
@@ -743,6 +753,11 @@ section.show-animacion .animacion {
   transform: translateX(0);
 }
 
+@media screen and (max-width: 550px) {
+  #navbarNav {
+    background-color: #2C2C2C;
+  }
+}
 /* header  */
 @media screen and (max-width: 550px) {
   #header-foto .imagen1 {

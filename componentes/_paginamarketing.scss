@@ -324,6 +324,14 @@ overflow-x: hidden;
 }
 
 
+
+
+@media screen and (max-width:550px) { #navbarNav {
+    background-color: $color1;
+    }
+}
+
+
 /* header  */
 
 @media screen and (max-width:550px) { #header-foto .imagen1  {
