@@ -888,7 +888,7 @@ section.show-animacion .animacion {
 }
 /* INDEX header  */
 @media screen and (max-width: 550px) {
-  .foto-inicio {
+  #presentacion .foto-inicio {
     background-attachment: scroll;
   }
 }
