@@ -486,7 +486,6 @@ section.show-animate .animate {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-attachment: fixed;
 }
 #header-foto .imagen2 {
   background-image: url(img/Creative_RedHunt.jpg);
