@@ -10,7 +10,7 @@
   
 #menu .container-fluid{
     width: 90%;
-   
+   text-align: center;
     gap: 50px;
     
     }
@@ -20,9 +20,12 @@
     }
 
   #navbarNav {
+      justify-content: flex-end;
   }
   #navbarNav .navbar-nav{
     display: flex;
+    background-color: none;
+    justify-content: flex-end;
 }
 
 #menu ul {
@@ -49,9 +52,16 @@
     margin:0;
     padding:0;
    }
-   #menu a:hover{
-    color: #656565;
+
+   #menu .nav-link:hover{
+       transform: scale(1.1);
+       color: #656565;
    }
-   #menu a:active{
+
+    .nav-link:hover > :not(:hover) {
+       color: white;
+       
+   }
+   #menu .nav-link:active{
     color: $color2;
 }
