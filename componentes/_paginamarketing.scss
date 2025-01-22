@@ -343,21 +343,16 @@ overflow-x: hidden;
     }
 }
 @media screen and (max-width:550px) { #header-foto .imagen2  {
-    background-size: auto 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
+    
+    background-attachment: none;
     }
 }
 @media screen and (max-width:550px) { #header-foto .imagen3  {
-    background-size: auto 100%;
-    }
+    background-attachment: none;    }
 }
 
 @media screen and (max-width:550px) { #header-foto .imagen4 {
-    height: 100%;
-    object-fit: cover;
-    background-position-y: bottom;
+    background-attachment: none;
   
  }
 }  
