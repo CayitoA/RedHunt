@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
     }
 
     .imagen2{
@@ -440,12 +441,14 @@ overflow-x: hidden;
 
 
 /* INDEX header  */
-
+@media screen and (max-width:550px) {  .foto-inicio  {
+    background-attachment: scroll;
+    }
+}
  
 @media screen and (max-width:550px) { #presentacion .contenedor_texto  {
     display: flex;
     flex-direction: column;
-
     padding: 0;
     width: 90%;}
 }
@@ -454,7 +457,7 @@ overflow-x: hidden;
     
 }
 }
-/* inicio mini cards servicos   */
+/* INDEX mini cards servicos   */
 @media screen and (max-width:550px) { #modulo #barra {
     padding: 0;
     height: fit-content;

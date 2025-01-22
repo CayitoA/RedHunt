@@ -85,7 +85,6 @@ body {
   height: 100%;
   position: relative;
   display: flex;
-  justify-content: space-between;
   justify-content: center;
   align-items: center;
 }
@@ -486,6 +485,7 @@ section.show-animate .animate {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 #header-foto .imagen2 {
   background-image: url(img/Creative_RedHunt.jpg);
@@ -888,6 +888,11 @@ section.show-animacion .animacion {
 }
 /* INDEX header  */
 @media screen and (max-width: 550px) {
+  .foto-inicio {
+    background-attachment: scroll;
+  }
+}
+@media screen and (max-width: 550px) {
   #presentacion .contenedor_texto {
     display: flex;
     flex-direction: column;
@@ -900,7 +905,7 @@ section.show-animacion .animacion {
     font-size: 3rem;
   }
 }
-/* inicio mini cards servicos   */
+/* INDEX mini cards servicos   */
 @media screen and (max-width: 550px) {
   #modulo #barra {
     padding: 0;
