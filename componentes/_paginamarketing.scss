@@ -534,21 +534,29 @@ overflow-x: hidden;
 }
 
 /* CONTACTO formulario    */
-
-@media screen and (max-width:550px) { #espacio .margen {
+@media screen and (max-width:550px) { #formulario .quienes-somos {
+    padding: 0;
+    width: 100%;
     height: fit-content;
-    font-size: 0.7rem;
-    line-height: 0.9rem;
-    color: royalblue;
-    margin-bottom: 40px;
-    padding: 25px 0;
+    background-color: none;
+    margin-bottom: 200px;
+    height: 35rem;
+    padding-bottom: 90px;
+   
     }
 }
-@media screen and (max-width:550px) { #espacio .margen h2{
-    font-size: 0.2rem;
-    line-height: 0.9rem;
-    color: royalblue;
+
+
+
+@media screen and (max-width:550px) { #formulario #espacio h2{
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: white;
     margin-bottom: 40px;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
     }
 }
 
