@@ -1,1 +1,52 @@
 @use '../modulos/variables' as *; 
+
+#formulario .quienes-somos{
+    width: $width;
+    height: 30rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 0 70px 0;
+
+
+    .logo{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logoRedHunt{
+        background-image: url(img/logo_redHunt.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         width: 200px;
+        height: 125px;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        
+        }
+
+    }
+
+    
+
+    .texto-quienes-somos{
+        padding: 20px;
+
+         h2{
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 2rem;
+            color: #faf9f8;
+            }
+    }
+
+    }
+
+   

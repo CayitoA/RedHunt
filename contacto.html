@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,800&display=swap" rel="stylesheet">
+    <!-- link animaciones -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- link bootstrap -->   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link meta -->   
@@ -49,6 +51,9 @@
           <li class="nav-item">
             <a class="nav-link" href="community.html">Community</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -58,17 +63,65 @@
 
 <!--  header -->
 <header>
+  <section id="header-foto">
+      <div class="imagen5 img-fluid"><h1 class="frase-header animate__animated animate__fadeInRight">Contacto</h1> </div>
+  </section>
+
 </header>
 
 <!--  main -->
 <main>
 
+  
 
+  <section id="formulario">
+    <div class="quienes-somos"> 
+        <div class="logo animate__animated  animate__tada  col-12 col-md-4">
+            <div class="logoRedHunt "> </div>
+        </div>
+        <div id="espacio" class="texto-quienes-somos col-12 col-md-8">
+        <h2 class="margen">
+         RedHunt , nace como un ecosistema diseñado para ayudar a las empresas a aprovechar al máximo las oportunidades que ofrece el entorno digital. Aquí, las pymes pueden encontrar todo lo que necesitan: desde soluciones en creación y planificación de contenido, community management, métricas y reportes, hasta servicios para la conformación de empresas, contratos y asesoría legal. Además, proporcionamos toda la información necesaria para que las empresas puedan tomar mejores decisiones estratégicas para su negocio.
+        </h2>
+        </div>
+    </div>
+
+    <div class="contenedor-formulario"> 
+        
+        <div class="col-12 col-md-6 frase-formulario foto-contacto">
+            <h3 class="animate__animated  animate__tada">¡No esperes más!</h3>
+            <h4 class="animate__animated animate__zoomIn  animate__delay-1s 
+                    animate__faster"> Conectando Marcas con su Target</h4>
+
+        </div>
+
+   <div class="col-12 col-md-6 datos-formulario container mt-5">
+      
+       <form>
+          <h3>Formulario de Contacto</h3>  
+           <div class="form-group">
+               <label for="nombre">Nombre:</label>
+               <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+           </div>
+           <div class="form-group">
+               <label for="telefono">Teléfono:</label>
+               <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" required>
+           </div>
+           <div class="form-group">
+               <label for="email">Correo Electrónico:</label>
+               <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+           </div>
+           <div class="btn-formulario"> 
+           <button type="submit" class=" btn btn-primary">Enviar</button>
+           </div>
+       </form>
+   </div>
+</div>
+</section>
 
     </h1>
 
-<section id="hola">
-</section>
+
 
 
 
@@ -111,5 +164,8 @@
     </div>
 </footer>
     
+<script src="./js/script.js"></script>
+<script src="./js/formulario.js"></script>
+
 </body>
 </html>

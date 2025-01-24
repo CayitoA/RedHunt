@@ -59,7 +59,19 @@
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
-    }    
+    }   
+    .imagen5{
+        background-image: url(img/Contacto2_RedHunt.jpg);    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        }  
 }
 #header-foto h1{
     color: $color2;
@@ -352,6 +364,11 @@ overflow-x: hidden;
   
  }
 }  
+@media screen and (max-width:550px) { #header-foto .imagen5 {
+    background-attachment: scroll;
+  
+ }
+}  
 @media screen and (max-width:550px) { #header-foto h1 {
     font-size: 3rem;
     padding: 0;
@@ -513,6 +530,25 @@ overflow-x: hidden;
 }
 @media screen and (max-width:550px) { #formulario .contenedor-formulario  {
     height: fit-content;
+    }
+}
+
+/* CONTACTO formulario    */
+
+@media screen and (max-width:550px) { #espacio .margen {
+    height: fit-content;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    color: royalblue;
+    margin-bottom: 40px;
+    padding: 25px 0;
+    }
+}
+@media screen and (max-width:550px) { #espacio .margen h2{
+    font-size: 0.2rem;
+    line-height: 0.9rem;
+    color: royalblue;
+    margin-bottom: 40px;
     }
 }
 
