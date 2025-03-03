@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2c2c2c">
     <title>Contacto</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <!-- link css -->
     <link rel="stylesheet" href="style.css">
     <!--  font awesome -->
@@ -21,6 +22,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link meta -->   
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- link google tag -->   
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXMRT6ENFT"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QXMRT6ENFT'); </script>
+<!-- Event snippet for Website lead conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-16851251115/j3kgCKSr6JgaEKvfpuM-', 'event_callback': callback }); return false; } </script>
+
+ <!-- link Meta Pixel Code -->   
+ <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '816075634008674');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=816075634008674&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -71,6 +94,9 @@
 
 <!--  main -->
 <main>
+  <a href="https://wa.me/56964880943?text=Hola" class="float-wa" target="_blank">
+    <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+  </a>
 
   
 
@@ -81,7 +107,7 @@
         </div>
         <div id="espacio" class="texto-quienes-somos col-12 col-md-8">
         <h2 class="margen">
-         RedHunt , nace como un ecosistema diseñado para ayudar a las empresas a aprovechar al máximo las oportunidades que ofrece el entorno digital. Aquí, las pymes pueden encontrar todo lo que necesitan: desde soluciones en creación y planificación de contenido, community management, métricas y reportes, hasta servicios para la conformación de empresas, contratos y asesoría legal. Además, proporcionamos toda la información necesaria para que las empresas puedan tomar mejores decisiones estratégicas para su negocio.
+         RedHunt nace como un ecosistema diseñado para ayudar a las empresas a aprovechar al máximo las oportunidades que ofrece el entorno digital. Aquí, las PYMEs pueden encontrar todo lo que necesitan: desde soluciones en creación y planificación de contenido, community management, métricas y reportes, hasta servicios para la conformación de empresas, contratos y asesoría legal. Además, proporcionamos toda la información necesaria para que las empresas puedan tomar mejores decisiones estratégicas para su negocio.
         </h2>
         </div>
     </div>
@@ -97,24 +123,27 @@
 
    <div class="col-12 col-md-6 datos-formulario container mt-5">
       
-       <form>
-          <h3>Formulario de Contacto</h3>  
-           <div class="form-group">
-               <label for="nombre">Nombre:</label>
-               <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
-           </div>
-           <div class="form-group">
-               <label for="telefono">Teléfono:</label>
-               <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" required>
-           </div>
-           <div class="form-group">
-               <label for="email">Correo Electrónico:</label>
-               <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
-           </div>
-           <div class="btn-formulario"> 
-           <button type="submit" class=" btn btn-primary">Enviar</button>
-           </div>
-       </form>
+    <form action="https://formsubmit.co/a33b980d39a86df547ee502f4f256d38" method="POST" id="contactForm">
+      <h3>¡Contáctanos!</h3>
+      <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+      </div>
+      <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" name="telefono" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" name="mail" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+      <div class="btn-formulario">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://redhunt.cl/">
+      <input type="hidden" name="_subject" value="Nuevo mensaje Contacto">
+  </form>
    </div>
 </div>
 </section>
@@ -135,7 +164,7 @@
             </div>
             <div class="frase frase2 col-12 col-md-3">
                 <ul>
-                    <li class="titulo">Servicios :</li>
+                    <li class="titulo">Servicios:</li>
                     <li class="link"><a href="marketing.html">Marketing</a></li>
                     <li class="link"><a href="creative.html">Creative</a></li>
                     <li class="link"><a href="legal.html">Legal</a></li>
@@ -145,7 +174,7 @@
             </div>
             <div class="frase frase2 col-12 col-md-3">
                 <ul>
-                    <li class="titulo">Contacto :</li>
+                    <li class="titulo">Contacto:</li>
 
                     <li class="alinear"> <i class="fa-regular fa-envelope icono3"></i>contacto@redhuntsolutions.com</li>
                     <li class="alinear"> <i class="fa fa-whatsapp icono3" ></i>+56964880943</li>
@@ -165,7 +194,17 @@
 </footer>
     
 <script src="./js/script.js"></script>
-<script src="./js/formulario.js"></script>
+<script src="./js/ formulario.js"></script>
+<script type="text/javascript">
+  window.omnisend = window.omnisend || [];
+  omnisend.push(["brandID", "67a10b5668e8f7f2f5da4f94"]);
+  omnisend.push(["track", "$pageViewed"]);
+  !function(){var e=document.createElement("script");
+  e.type="text/javascript",e.async=!0,
+  e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+  var t=document.getElementsByTagName("script")[0];
+  t.parentNode.insertBefore(e,t)}();
+  </script>
 
 </body>
 </html>
