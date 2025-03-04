@@ -1354,4 +1354,13 @@ section.show-animacion .animacion {
   justify-items: center;
 }
 
+#piedepagina .datos {
+  padding-left: 5px;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+  color: #faf9f8;
+}
+
 /*# sourceMappingURL=style.css.map */
