@@ -456,6 +456,7 @@ section.show-animate .animate {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: pink;
 }
 #formulario .datos-formulario h3 {
   font-size: 1.5rem;
