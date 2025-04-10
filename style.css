@@ -403,7 +403,7 @@ section.show-animate .animate {
 
 #formulario .contenedor-formulario {
   width: 990px;
-  height: 27rem;
+  height: 26rem;
   background-color: #dee2e6;
   display: flex;
   flex-direction: row;
@@ -414,9 +414,8 @@ section.show-animate .animate {
 }
 
 #formulario .frase-formulario {
-  background-color: #E53E1F;
   background-color: #4d4d4d;
-  height: 27rem;
+  height: 26rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -452,8 +451,11 @@ section.show-animate .animate {
 }
 
 #formulario .datos-formulario {
-  padding: 0 20px;
-  height: 27rem;
+  padding: 20px;
+  height: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #formulario .datos-formulario h3 {
   font-size: 1.5rem;
