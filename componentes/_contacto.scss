@@ -38,7 +38,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-         width: 200px;
+        width: 200px;
         height: 130px;
         justify-content: center;
         align-items: center;
@@ -65,3 +65,12 @@
     }
 
    
+#formulario .container{
+    background-color: none;
+    margin-top: 0;
+    padding-top: 1px;
+
+    ::placeholder{
+        font-size: 0.8rem;
+    }
+}

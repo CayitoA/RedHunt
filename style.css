@@ -403,7 +403,7 @@ section.show-animate .animate {
 
 #formulario .contenedor-formulario {
   width: 990px;
-  height: 25rem;
+  height: 27rem;
   background-color: #dee2e6;
   display: flex;
   flex-direction: row;
@@ -416,12 +416,12 @@ section.show-animate .animate {
 #formulario .frase-formulario {
   background-color: #E53E1F;
   background-color: #4d4d4d;
-  height: 25rem;
+  height: 27rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
   overflow: hidden;
 }
 #formulario .frase-formulario h3 {
@@ -452,8 +452,8 @@ section.show-animate .animate {
 }
 
 #formulario .datos-formulario {
-  padding: 25px;
-  height: 25rem;
+  padding: 0 20px;
+  height: 27rem;
 }
 #formulario .datos-formulario h3 {
   font-size: 1.5rem;
@@ -898,51 +898,26 @@ section.show-animacion .animacion {
   justify-content: center;
   background-color: #232323;
 }
-#condiciones .texto-icono {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-#condiciones .btn-condiciones {
-  border: none;
-  background-color: #232323;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
-  border: 0;
-}
-#condiciones .btn-condiciones .flecha {
-  font-size: 2rem;
-  padding-left: 30px;
-}
-#condiciones .btn-condiciones h3:hover {
-  color: #9c9c9c;
-}
-#condiciones .btn-condiciones h3:active {
-  color: #E53E1F;
-}
 #condiciones .frase-condiciones {
   width: 990px;
   background-color: #2C2C2C;
   background-color: #232323;
-  padding: 20px;
+  padding: 100px 20px;
 }
 #condiciones .frase-condiciones h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #faf9f8;
-  padding: 0;
+  padding: 30px 0;
   display: flex;
   align-items: center;
 }
 #condiciones .frase-condiciones h5 span {
   color: #faf9f8;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   padding-top: 50px;
-  line-height: 3rem;
+  line-height: 5rem;
 }
 #condiciones .frase-condiciones h5 {
   font-size: 0.9rem;
@@ -1249,6 +1224,15 @@ section.show-animacion .animacion {
   color: #faf9f8;
 }
 
+#formulario .container {
+  background-color: none;
+  margin-top: 0;
+  padding-top: 1px;
+}
+#formulario .container ::placeholder {
+  font-size: 0.8rem;
+}
+
 /* footer*/
 #piedepagina {
   margin: 0 auto;
@@ -1268,9 +1252,10 @@ section.show-animacion .animacion {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
+  width: 95%;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
 }
 
 #piedepagina .logo {
